@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "smartdry-lives"
+version = "0.1.0"
+description = "Revive your SmartDry IoT dryer sensor and collect readings locally through MQTT"
+license = "AGPL-3.0-or-later"
+authors = ["Michael Smith <michael@spinda.net>"]
+readme = "README.md"
+homepage = "https://github.com/spinda/smartdry-lives#readme"
+repository = "https://github.com/spinda/smartdry-lives.git"
+packages = [{include = "smartdry_lives"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+lavender = "^0.1.1"
+
+[tool.lavender]
+target-version = ["py310"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
